@@ -5,14 +5,16 @@ import './index.css';
 import App from './App';
 import Sci from './Sci';
 import Sci2 from './Sci2';
+import Form from './Form';
 //import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <Form />
+    {/* <App />
     <Sci />
-    <Sci2 />
+    <Sci2 /> */}
   </React.StrictMode>
 );
 
