@@ -4,19 +4,19 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
 // import App from './App';
 // import Sci from './Sci';
-// import Sci2 from './Sci2';
+import Sci2 from './Sci2';
 import Form from './Form';
 import MyOwnTable from './MyOwnTable';
 //import reportWebVitals from './reportWebVitals';
+import Task01 from './task01/Task01_com';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Form />
     <MyOwnTable />
-    {/* <App />
-    <Sci />
-    <Sci2 /> */}
+    <Task01/>
+    <Sci2 /> 
   </React.StrictMode>
 );
 

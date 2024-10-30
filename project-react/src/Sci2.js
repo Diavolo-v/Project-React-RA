@@ -9,7 +9,9 @@ function Sci2(){
         <div>
             <input type="button" value={"value"} onClick={handlebutton}></input>
             <input ref ={inputref} type="text"  min={2} max={15}  onChange={handleinputText}></input>
+            <img src="./icons/Icon14_01.png" alt="icon" />
         </div>
+       
     );
 }
 export default Sci2;
