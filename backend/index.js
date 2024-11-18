@@ -1,10 +1,28 @@
 const express = require('express');
 const app = express();
-
+const cors = require('cors');
+app.use(cors());
 
 app.get('/', (req,res) => {
     res.send('<div><h1>OOpsie</h1></div>');
 });
+let globaldata = [];
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+
+app.post('/json', (req, res) => {
+    const { imie, nazwisko, haslo, cosTam, plec } = req.body;
+    globaldata.push(req.body);
+    console.log("imie:", imie, "nazwisko:", nazwisko, "haslo:", haslo, "cosTam:", cosTam, "plec:", plec);
+    res.json({ message: {imie, nazwisko, haslo, cosTam, plec} });
+});
+
+app.get('/json/data', (req,res) => {
+    res.json(globaldata);
+});
+
+
+
 
 app.get('/abc', (req,res) => {
     res.statusCode = 500;

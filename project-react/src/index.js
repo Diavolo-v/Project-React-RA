@@ -9,15 +9,18 @@ import Form from './Form';
 import MyOwnTable from './MyOwnTable';
 //import reportWebVitals from './reportWebVitals';
 import Task01 from './task01/Task01_com';
+import Formularz from './Formularz';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Form />
+    {/* <Form />
     <MyOwnTable />
     <Task01/>
-    <Sci2 /> 
+    <Sci2 />  */}
+  <Formularz />
   </React.StrictMode>
+
 );
 
 // If you want to start measuring performance in your app, pass a function
